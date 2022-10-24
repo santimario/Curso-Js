@@ -22,11 +22,9 @@ function ingresar() {
     return login;
 }
 
+function menu(opcion){
 
-if (ingresar()) {
-
-    let mensajes = 3;
-    let opcion = prompt("Elija una opcion: \n1-Bandeja de entrada  \n2 -Enviar mensaje \n3-Papelera \n4-Salir");
+    let mensajes = 3;    
 
     while (opcion!=4) {   
         switch (opcion) {
@@ -63,6 +61,15 @@ if (ingresar()) {
 
         opcion = prompt("Elija una opcion: \n1-Bandeja de entrada  \n2 -Enviar mensaje \n3-Papelera \n4-Salir");
     }
+    
+    return opcion;
+}
+
+
+if (ingresar()) {
+
+    let opcion = prompt("Elija una opcion: \n1-Bandeja de entrada  \n2 -Enviar mensaje \n3-Papelera \n4-Salir");
+    menu(opcion)
 
 }else{
     alert("Intentos superados, pongase en contacto con nuestra mesa de ayuda");
