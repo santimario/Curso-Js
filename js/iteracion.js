@@ -22,9 +22,7 @@ function ingresar() {
     return login;
 }
 
-function menu(opcion, mensajes){
-
-        
+function menu(opcion, mensajes){        
 
     while (opcion!=4) {   
         switch (opcion) {
@@ -61,8 +59,7 @@ function menu(opcion, mensajes){
 
         opcion = prompt("Elija una opcion: \n1-Bandeja de entrada  \n2 -Enviar mensaje \n3-Papelera \n4-Salir");
     }
-
-    return opcion;
+        
 }
 
 
