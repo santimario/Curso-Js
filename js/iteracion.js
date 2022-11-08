@@ -38,12 +38,12 @@ function menu(opcion, mensajes){
 
             case "3":
                 let papelera = prompt("Tiene " + mensajes + " mensajes en su papelera, desea eliminarlos definitivamente?")
-                if (papelera === "si" || papelera === "SI") {
+                if (papelera.toLowerCase() == "si") {
                     alert("Papelera vacia")
                     mensajes -= mensajes;
                     break;
 
-                } else if (papelera === "no" || papelera === "NO") {
+                } else if (papelera.toLowerCase() == "no") {
                     alert("Usted tiene " + mensajes + " mensajes en su papelera");
                     break;
                 } else {
